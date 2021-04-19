@@ -30,22 +30,24 @@ namespace PaymentContext.Domain.Entities
         public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
         
         public void AddSubscription(Subscription subscription)
-        {
+        {            
             var hasSubscriptionActive = false;
             foreach (var sub in _subscriptions)
-            {
+            {               
+
                 if(sub.Active)
                     hasSubscriptionActive = true;
             }
 
-            //AddNotifications(new Contract<Notification>()
-            //.Requires()
-            //.IsFalse(hasSubscriptionActive, "Student.Subscriptions", "Você já tem uma assinatura ativa!")
-            //);
+            AddNotifications(new Contract<Notification>()
+                .Requires()
+                .IsFalse(hasSubscriptionActive, "Student.Subscriptions", "Você já tem uma assinatura ativa!")
+                .AreEquals(0, subscription.Payments.Count, "Student.Subscription.Payment", "Esta assinatura não possui pagamentos!")
+            );
 
             //Alternativa
-            if(hasSubscriptionActive)
-                AddNotification("Student.Subscriptions", "Você já tem uma assinatura ativa!");
+            //if(hasSubscriptionActive)
+            //  AddNotification("Student.Subscriptions", "Você já tem uma assinatura ativa!");
             
         }
 
