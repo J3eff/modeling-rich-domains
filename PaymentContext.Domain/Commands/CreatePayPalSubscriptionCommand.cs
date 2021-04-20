@@ -1,10 +1,12 @@
 using System;
+using Flunt.Notifications;
 using PaymentContext.Domain.Enums;
+using PaymentContext.Shered.Commands;
 
 namespace PaymentContext.Domain.Commands
 {
-   public class CreatePayPalSubscriptionCommand
-   {
+    public class CreatePayPalSubscriptionCommand : Notifiable<Notification>, ICommand
+    {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Document { get; set; }
@@ -12,7 +14,6 @@ namespace PaymentContext.Domain.Commands
 
         public string TransactionCode { get; set; }
         public string PaymentNumber { get; set; }
-        
         public DateTime PaidDate { get; set; }
         public DateTime ExpireDate { get; set; }
         public decimal Total { get; set; }
@@ -29,7 +30,10 @@ namespace PaymentContext.Domain.Commands
         public string State { get; set; }
         public string Country { get; set; }
         public string ZipCode { get; set; }
-         
 
-   } 
+        public void Validate()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
