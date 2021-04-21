@@ -7,3 +7,4 @@ abordados muitos mais temas que só vem agregar na minha carreira como Dev aplic
 
 Agradeço pelo curso e pela ótima didática Andre Baltieri, vale ressaltar que o curso é gratuito e de uma ótima qualidade.
 
+#### Aplicação desenvolvida dentro do curso Modelando Domínios Ricos ministrada pelo Andre Baltinieri
