@@ -25,8 +25,8 @@ $ dotnet run
 <h2> 📚 Abordagem do curso </h2>
 <p> Sistema de pagamento - aplicando os princípios de SOLID, Clean Code e Domínios ricos. </p>
 
-Ótimo curso onde focamos nos domínios, foi possível consolidar alguns ponto sobre Domain-Driven Design, mais foi 
-abordados muitos mais temas que só vem agregar na minha carreira como Dev aplicando princípios do SOLID, CQRS, Queries, Handlers entre outros...
+Ótimo curso, onde focamos nos domínios é foi possível consolidar alguns ponto sobre Domain-Driven Design, foi abordados muitos mais temas que só vem agregar na minha carreira como Dev, como princípios do SOLID, CQRS, Queries, Handlers entre outros...
 
 O primeiro de muitos do quais ainda pretendo praticar na plataforma <a href="https://balta.io/">Balta.io</a>, me passou uma visão diferente do que é trabalhar com .NET.
+É claro, sempre falando a lingua do cliente e abstraindo tudo que necessario para nossa aplicação.
 Aplicação desenvolvida dentro do curso Modelando Domínios Ricos ministrada pelo <strong> Andre Baltinieri </strong>
