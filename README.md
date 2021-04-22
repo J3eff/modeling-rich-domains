@@ -1,4 +1,5 @@
 # Modelando Domínios Ricos
+### Sistema de pagamento - aplicando os princípios de SOLID, Clean Code e Domínios ricos. 
 
 #### O primeiro de muitos do quais ainda pretendo praticar na plataforma <a href=“https://balta.io/“>Balta.io</a>, me passou uma visão diferente do que é trabalhar com .NET.
 
